@@ -1,6 +1,5 @@
 To create the db within your command line do the following:
 
-
 NOTE: #s are second time
 Also, this is being installed on your system rather than just in your project folder
 
