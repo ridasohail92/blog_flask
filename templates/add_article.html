@@ -1,0 +1,30 @@
+
+{% extends 'layout.html' %}
+
+{% block body %}
+  <h1>Add Article</h1>
+  <!-- when you leave action blank then means on the same page-->
+
+  <!-- form helpers are to display error messages in form directly underneath the filed-->
+  {% from "includes/_formhelpers.html" import render_field %}
+
+  <form action="" method="POST">
+
+    <!-- render_field is from wtforms module-->
+
+    <div class="form-group">
+      {{render_field(form.title, class_="form-control")}}
+    </div>
+
+    <div class="form-group">
+      {{render_field(form.body, class_="form-control", id="editor")}}
+    </div>
+
+    
+    <p><input type="submit" class="btn btn-primary" value="Submit"></p>
+
+  </form>
+
+
+
+{% endblock %}
